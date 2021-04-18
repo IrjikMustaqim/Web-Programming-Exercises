@@ -1,0 +1,32 @@
+5. a. function fopen adalah inbuilt function pada php yang digunakan untuk
+membuka file. Parameter pada function tersebut ada 2 yaitu nama file yang ingin dibuka dan 
+mode file operasi apa yang diinginkan.
+
+b. die function adalah inbuilt function php yang digunakan untuk men-terminate file dan menampilkan
+pesan yang berupa string yang diberikan pada parameter function tersebut.
+
+c. fread merupakan inbuilt function pada php yang digunakan sebagai tindak lanjut setelah membuka file yang
+menggunakan akses untuk membaca file tersebut. parameter yang diberikan pada function ini adalah file yang sudah dibuka
+oleh function fopen dan parameter keduanya adalah batas maksimum berapa bytes file yang ingin ditampilkan.
+
+d. fclose adalah inbuilt funcion php yang berperan untuk menutup file yang dibuka oleh function
+fopen. Menurut beberapa referensi sebenarnya jika tidak menggunakan fclose file php secara otomatis akan menutup setelah selesai dioperasikan
+namun untuk mengatasi kemungkinan error yang muncul dianjurkan menggunakan fclose.
+
+2 kegiatan 2
+2 script diatas sebenarnya sama hanya saja menggunakan metode yang berbeda pada file bacafile.php digunakan kombinasi fread dan filesize function
+yang fungsinya untuk membaca dan filesize untuk menghitung ukuran file yang kemudian diberikan pada argumen kedua function fread.
+
+sedangkan bacafile2.php menggunakan kombinasi conditional while loop, function feof dan function fgets. Dimana metode ini membaca file per baris sampai 
+akhir dari file kemudian wile loop akan berhenti.
+
+3.a. feof mengecek apakah pointer sudah sampai pada akhir file
+b. fgets membaca file per baris
+
+kegiatan 3
+3. function fwrite menuliskan string yang diberikan pada parameter kedua ke file yang diberikan pada parameter  pertama.
+4. maka myfile.txt akan tereset dan hanya berisi tulisan pada parameter kedua dari function fwrite. hal itu disebabkan mode akses
+ke file yang bersifat write yang berarti mengganti seluruh isi file dengan isi yang baru.
+
+
+
